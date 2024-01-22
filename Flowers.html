@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritch's Flower Shop</title>
+    <style>
+        body {
+	    background-color: #35D6ED;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+	    font-family: Raleway,sans-serif
+	    color: black;
+	    font-weight: 500;
+	    letter-spacing: 4px;
+	    
+        }
+        .cart-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+	}    
+        .cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;	
+	    background-color: #C9F6FF;
+        }
+	 h2 {
+	    color: white;
+	}
+        .cart h4 {
+            margin-top: 0px;
+	    
+        }
+
+        .cart img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .cart ul {
+            list-style-type: none;
+            padding:   0px;
+        }
+
+        .cart li {
+            margin-bottom: 10px;
+        }
+
+        .cart p {
+            margin-top: 10px;
+        }
+	.cart-price {
+            color: #e44d26;
+            font-weight: bold;
+	}
+	.content1 h1{
+	    font-family: Raleway,sans-serif
+	    color: black;
+	    font-weight: 500;
+	    letter-spacing: 8px;
+	}
+	.navbar{
+  	    position: fixed;
+  	    background-color: transparent;
+  	    width: 100%;
+  	    padding: 30px 0;
+  	    top: 0;
+  	    z-index: 100;
+   	    line-height: 20px;
+	}
+	button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+	.navbar-menu a{
+ 	   font-size: 13px;
+  	   font-weight: 500;
+  	   font-family: 'Raleway',sans-serif;
+  	   color: #17202A;
+  	   text-transform: uppercase;
+  	   letter-spacing: 2px;
+  	   margin-left: 35px;
+  	    display: inline-block;
+	}
+	.navbar-menu a::after{
+ 	   content: '';
+  	   display: block;
+ 		width: 0;
+ 	   height: 1.8px;
+  	   background-color: #17202A;
+  	   transition: width .3s;
+	}
+	.navbar-menu a:hover::after{
+ 	    width: 100%;
+	}
+	.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding:  40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: Brush Script MT,  sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 38px;
+  color: #9a533d;
+}
+    </style>
+</head>
+<body>
+ 
+  <header>
+        <h1>Ritch's Flower Shop</h1>
+    </header>
+
+	<h2> FLOWERS </h2>
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/IloveYou.jpg" alt="Product 1">
+	    <p> I Love You</p>
+            <ul>
+                <li><strong><div class="item-price">₱3,400.60</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Pretty.gif" alt="Product 2">
+	     <p>Pretty</p>
+            <ul>
+                <li><strong><div class="item-price">₱2,300.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Ritch's.jpg" alt="Product 3">
+	     <p> Ritchelene's</p>
+            <ul>
+                <li><strong><div class="item-price">₱3,200.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Cute%20Roses.jpg" alt="Product 4">
+	     <p> Beautiful Girl   </p>
+            <ul>
+               <li><strong><div class="item-price">₱4,400.50</div></strong></li>
+            </ul>
+	</div>
+
+	  <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/beautiful%20you%2012roses.jpg" alt="Product 4">
+	     <p> Cutie Roses </p>
+            <ul>
+               <li><strong><div class="item-price">₱4,400.50</div></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Yellow%20Tulip%20Love.jpg" alt="Product 5">
+		 <p>Yellow Tulips Love</p>
+            <ul>
+               <li><strong><div class="item-price">₱7,800.99</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Romantic.jpg" alt="Product 6">
+	    <p>Romantic</p>
+            <p><strong><div class="item-price">₱5,000.99</div></strong></p>
+        </div>
+
+
+        <div class="cart">  
+            <img src="E:\Ritch's Flower Shop/Images/Assorted%20Tulips.jpg" alt="Product 7">
+            <p>Assorted Tulips</p>
+            <p><strong><div class="item-price">₱7,200.00</div></strong></p>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/White%20Mums.jpg" alt="Product 8">
+	    <p>White Mums</p>
+		<p><strong><div class="item-price"> ₱1,500.00 </div></strong></p>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Yellow%20pink%20gerbera.jpg" alt="Product 4">
+	    <p>Yellow Pink Gerbera</p>
+            <ul>
+               <li><strong><div class="item-price">₱2,200.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+	   <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Pure%20Love.jpg" alt="Product 1">
+	   <p>Pure Love</p>
+	   <p><strong><div class="item-price">₱6,000.00</div></strong></p>
+        </div>
+	 
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Express%20Feelings.jpg" alt="Product 2" >
+	    <p>Express Feelings</p>
+            <ul>
+	<p><strong><div class="item-price">₱6,500.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Exotic%20Orchid.jpg" alt="Product 3">
+	    <p>Exotic Orchid Beauty</p>
+            <ul>
+		<p><strong><div class="item-price">₱2,800.00</div></strong></p>
+            </ul>
+        </div>
+        
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Spring%20Pink.jpg" alt="Product 4">
+	    <p>Spring Pink</p>
+            <ul>
+	<p><strong><div class="item-price">₱3,550.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Redrosesand%20wine.jpg" alt="Product 5">
+	    <p>Red Roses And Wine</p>
+            <ul>
+               <li><strong><div class="item-price">₱6,700.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/lush%20Splendor.jpg" alt="Product 5">
+	    <p>Lush Splendor</p>
+            <ul>
+	   <p><strong><div class="item-price">₱2,750.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Pretty%20pink.jpg" alt="Product 6">
+	    <p>Pretty Pink</p>
+            <ul>
+	    <p><strong><div class="item-price">₱3,350.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Classic%20Red.jpg" alt="Product 7">
+	    <p>Classic Red</p>
+            <ul>
+	   	 <p><strong><div class="item-price">₱1,600.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/perfect%20composition.jpg" alt="Product 8">
+	    <p>Perfect Composition</p>
+            <ul>
+		<p><strong><div class="item-price">₱1,790.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Personal%20touch.jpg" alt="Product 10">
+	    <p>Personal Touch</p>
+            <ul>
+               <li><strong><div class="item-price">₱9,800.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+	<div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Positivity.jpg" alt="Product 1">
+	    <p> Positivity</p>
+            <ul>
+                <li><strong><div class="item-price">₱3,500.60</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Uniqueness.jpg" alt="Product 2">
+	     <p> Uniqueness</p>
+            <ul>
+                <li><strong><div class="item-price">₱2,500.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Blush%20Of%20Love.jpg" alt="Product 3">
+	     <p> Blush Of Love </p>
+            <ul>
+                <li><strong><div class="item-price">₱2,300.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Truly%20Magnificient.jpg" alt="Product 4">
+	     <p> Truly Magnificient</p>
+            <ul>
+               <li><strong><div class="item-price">₱6,300.50</div></strong></li>
+            </ul>
+	</div>
+
+	  <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Peach%20Melba.jpg" alt="Product 4">
+	     <p> Peach Melba</p>
+            <ul>
+               <li><strong><div class="item-price">₱1,900.50</div></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Pink%20Tulips%20Love.jpg" alt="Product 5">
+		 <p>Pink Tulips Love</p>
+            <ul>
+               <li><strong><div class="item-price">₱7,508.99</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Breathtaking%2050.jpg" alt="Product 6">
+	    <p>Breathtaking 50</p>
+            <p><strong><div class="item-price">₱7,000.99</div></strong></p>
+        </div>
+
+
+        <div class="cart">  
+            <img src="E:\Ritch's Flower Shop/Images/Chrysanthemums.jpg" alt="Product 7">
+            <p>Chrysanthemums</p>
+            <p><strong><div class="item-price">₱1,200.00</div></strong></p>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Golden%20Autumn.jpg" alt="Product 8">
+	    <p>Golden Autumn</p>
+		<p><strong><div class="item-price">₱1,500.00</div></strong></p>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Exquisite%20Red.jpg" alt="Product 4">
+	    <p>Exquisite Red</p>
+            <ul>
+               <li><strong><div class="item-price">₱6,300.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+	   <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Elegant%20Pink.jpg" alt="Product 1">
+	   <p>Elegant Pink </p>
+	   <p><strong><div class="item-price">₱2,000.00</div></strong></p>
+        </div>
+	 
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Queen%20Of%20Heart.jpg" alt="Product 2" >
+	    <p>Queen Of Heart</p>
+            <ul>
+	<p><strong><div class="item-price">₱1,500.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Magnificient.jpg" alt="Product 3">
+	    <p>Magnificient</p>
+            <ul>
+		<p><strong><div class="item-price">₱6,800.00</div></strong></p>
+            </ul>
+        </div>
+        
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/PoshPink.jpg" alt="Product 4">
+	    <p>Posh Pink</p>
+            <ul>
+	<p><strong><div class="item-price">₱3,550.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Simplicity.jpg" alt="Product 5">
+	    <p>Simplicity/p>
+            <ul>
+               <li><strong><div class="item-price">₱1,100.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Glowing%20Carnations.jpg" alt="Product 5">
+	    <p>Glowing Carnations</p>
+            <ul>
+	   <p><strong><div class="item-price">₱2,700.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Freshness%20Of%20White.jpg" alt="Product 6">
+	    <p>Freshness Of White</p>
+            <ul>
+	    <p><strong><div class="item-price">₱3,000.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Classic%20Red.jpg" alt="Product 7">
+	    <p>Classic Red</p>
+            <ul>
+	   	 <p><strong><div class="item-price">₱1,600.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Lovely%20Beary.jpg" alt="Product 8">
+	    <p>Lovely Beary</p>
+            <ul>
+		<p><strong><div class="item-price">₱2,790.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Always%20There.jpg" alt="Product 10">
+	    <p>Always There</p>
+            <ul>
+               <li><strong><div class="item-price">₱1,800.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+	
+	<div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Delicate%20Darling.jpg" alt="Product 1">
+	    <p> Delicate Darling</p>
+            <ul>
+                <li><strong><div class="item-price">₱1,500.60</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Bouquet%20red%20and%20white.jpg" alt="Product 2">
+	     <p> Bouquet red and white</p>
+            <ul>
+                <li><strong><div class="item-price">₱2,700.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Etrnal%20Beauty%20Lilies.jpg" alt="Product 3">
+	     <p> Eternal Beauty Lilies </p>
+            <ul>
+                <li><strong><div class="item-price">₱4,300.50</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Calla%20Lily%20White.jpg" alt="Product 4">
+	     <p> Calla Lilly White</p>
+            <ul>
+               <li><strong><div class="item-price">₱800.50</div></strong></li>
+            </ul>
+	</div>
+
+	  <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Romance.jpg" alt="Product 4">
+	     <p>Romance</p>
+            <ul>
+               <li><strong><div class="item-price">₱7,900.50</div></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/RedRoses%20&%20White.jpg" alt="Product 5">
+		 <p>Red Rose And Lilies</p>
+            <ul>
+               <li><strong><div class="item-price">₱3,508.99</div></strong></li>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Treasured%20Love.jpg" alt="Product 6">
+	    <p>Treasured Love</p>
+            <p><strong><div class="item-price">₱4,000.99</div></strong></p>
+        </div>
+
+
+        <div class="cart">  
+            <img src="E:\Ritch's Flower Shop/Images/Happiness.jpg" alt="Product 7">
+            <p>Happiness</p>
+            <p><strong><div class="item-price">₱5,200.00</div></strong></p>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Bright%20Gerera.jpg" alt="Product 8">
+	    <p>Bright Gerbera</p>
+		<p><strong><div class="item-price">₱1,500.00</div></strong></p>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Pinky%20Love.jpg" alt="Product 4">
+	    <p>Pinky Love</p>
+            <ul>
+               <li><strong><div class="item-price">₱1,300.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+	   <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Passionate%20Red%20Roses.jpg" alt="Product 1">
+	   <p>Passionate Red Roses </p>
+	   <p><strong><div class="item-price">₱2,800.00</div></strong></p>
+        </div>
+	 
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/12%20white%20roses.jpg" alt="Product 2" >
+	    <p>White Roses Snow</p>
+            <ul>
+	<p><strong><div class="item-price">₱1,300.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Unforgettable%2050%20Rose.jpg" alt="Product 3">
+	    <p>Unforgetale 50 Roses</p>
+            <ul>
+		<p><strong><div class="item-price">₱6,900.00</div></strong></p>
+            </ul>
+        </div>
+        
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Carnation%20Love.jpg" alt="Product 4">
+	    <p>Carnation Love</p>
+            <ul>
+	<p><strong><div class="item-price">₱2,550.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Gorgeous%20Roses%20And%20Lilies.jpg" alt="Product 5">
+	    <p>Gorgeous Roses</p>
+            <ul>
+               <li><strong><div class="item-price">₱4,290.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/LoveInAir.jpg" alt="Product 5">
+	    <p>Love In Air</p>
+            <ul>
+	   <p><strong><div class="item-price">₱2,700.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Stolen%20Kisses.jpg" alt="Product 6">
+	    <p>Stolen Kisses</p>
+            <ul>
+	    <p><strong><div class="item-price">₱3,000.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Alliance%20Certified.jpg" alt="Product 7">
+	    <p>Alliance Certified</p>
+            <ul>
+	   	 <p><strong><div class="item-price">₱6,600.00</div></strong></p>
+            </ul>
+        </div>
+
+        <div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Always%20For%20You.jpg" alt="Product 8">
+	    <p>Always For You</p>
+            <ul>
+		<p><strong><div class="item-price">₱1,790.00</div></strong></p>
+            </ul>
+        </div>
+
+	<div class="cart">
+            <img src="E:\Ritch's Flower Shop/Images/Beautiful%20Red%2020.jpg" alt="Product 10">
+	    <p>Beatiful red 20</p>
+            <ul>
+               <li><strong><div class="item-price">₱2,200.00</div></strong></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

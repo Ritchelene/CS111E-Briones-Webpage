@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Shop</title>
+
+  <style>
+	*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 100;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: Center;
+  justify-content:  space-between;
+}
+.logo{
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: Brush Script MT,  sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 38px;
+  color: #9a533d;
+}
+.navbar-menu a{
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: #17202A;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #17202A;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+
+#home{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.content1{
+  background-color: #35D6ED;
+}
+.content2{
+  background-color: #C9F6FF;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.content1 .content{
+  color: #000;
+  padding: 20px;
+  background-color: none;
+  position: absolute;
+  right: 170px;
+  top: 440px;
+  text-align: center;
+  width: 500px;
+  height: 317px;
+  
+}
+.content p{
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  font-family: Times New Roman,sans-serif;
+}
+.content button{
+  padding: 17px 25px;
+  margin-top: 30px;
+  background-color: #17202A;
+  border: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-family: 'Raleway',sans-serif;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.content button:hover{
+  color: #fff;
+}
+.social-container{
+  position: absolute;
+  left: 40px;
+  bottom: 30%;
+}
+.social-icons{
+  list-style: none;
+}
+.social-icons li{
+  margin: 35px 0;
+}
+.social-icons li i{
+  color: rgba(255,255,255,0.77);
+  font-size: 20px;
+}
+.social-icons li a:hover i{
+  transform: scale(1.5);
+  color: #846445;
+  transition: all .2s ease-in-out;
+}
+.social-icons::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 150px;
+  top: -170px;
+  left: 8px;
+  background-color: #333;
+}
+.social-icons::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 150px;
+  bottom: -170px;
+  left: 8px;
+  background-color: #000000b0;
+}
+.content2 h1{
+  position: absolute;
+  left: 200px;
+  top: 240px;
+  font-size: 80px;
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 8px;
+}
+.content2 h1 span{
+  color: #fff;
+}
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="inner-width">
+      <a class="logo"><span>Ritch</span>Briones</a>
+      <div class="navbar-menu">
+        <a href="E:\Ritch's Flower Shop/Home.html">home</a>
+        <a href="E:\Ritch's Flower Shop/About%20us.html">about us</a>
+        <a href="E:\Ritch's Flower Shop/Flowers.html">products</a>
+        <a href="E:\Ritch's Flower Shop/contact%20us.html">contact</a>
+      </div>
+    </div>
+  </div>
+  <section id="home">
+    <div class="content1">
+      <div class="content">
+        <p>Welcome to our enchanting flower shop!  <p> Step into a world of vibrant colors, delicate fragrances, and the beauty of nature.  <p>Our online flower shop is a haven for flower enthusiasts, where you can explore a wide variety of exquisite blooms and arrangements.</p> 
+       
+      </div>
+     
+    </div>
+    <div class="content2">
+   <h1> Ritch's Flower Shop</h1>
+    </div>
+  </section>
+</body>
+</html>
